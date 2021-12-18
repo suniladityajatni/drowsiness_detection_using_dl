@@ -95,9 +95,10 @@ function takesnapshot(){
   formdata.append('hello',img.data);
   // img=new FormData(img)
   // var data_to_send = $.serialize(img.data);
+	$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
   $.ajax({
             type: 'POST',
-            url: '/_stuff',
+            url: $SCRIPT_ROOT+'/_stuff',
             data: formdata,
             contentType: false,
             cache: false,
