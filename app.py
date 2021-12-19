@@ -73,7 +73,10 @@ def blinked(a,b,c,d,e,f):
 t=0
 @app.route('/_stuff', methods = ['GET','POST'])
 def stuff():
-    global sleep,active,drowsy,status#="NOT !"
+    global sleep
+    global active
+    global drowsy
+    global status
     # print("ENTER")
     # print(status)
     if request.method == 'POST':
@@ -165,7 +168,7 @@ def stuff():
         # ret,buffer=cv2.imencode('.jpg',frame)
         # frame=buffer.tobytes()
         # os.remove("new.png")
-        result="status"
+        result=status
         return result
     return "FLASK"
 
