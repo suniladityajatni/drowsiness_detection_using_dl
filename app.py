@@ -74,7 +74,7 @@ t=0
 @app.route('/_stuff', methods = ['GET','POST'])
 def stuff():
     global sleep,active,drowsy,status#="NOT !"
-    # print("ENTER")
+    print("ENTER INDISE FLASK")
     # print(status)
     if request.method == 'POST':
         # Get the file from post request
@@ -182,4 +182,4 @@ if __name__ == '__main__':
     drowsy=0
     # if(drowsy>6):
     status="NO FACE DETECTED,PLEASE COME IN FRONT OF LIGHT!"
-    app.run(debug=True)
+    app.run(debug=True,port=8000)
