@@ -98,7 +98,7 @@ function takesnapshot(){
 	$SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
   $.ajax({
             type: 'POST',
-            url: $SCRIPT_ROOT+'/_stuff',
+            url: '/_stuff',
             data: formdata,
             contentType: false,
             cache: false,
@@ -111,6 +111,9 @@ function takesnapshot(){
             },
 	  error: function(XMLHttpRequest, textStatus, errorThrown) {
         console.log("failed");
+		  console.log(errorThrown);
+		  console.log(textStatus);
+		  
     },
         });
         console.log("EXIT")
