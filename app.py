@@ -73,7 +73,7 @@ def blinked(a,b,c,d,e,f):
 t=0
 @app.route('/_stuff', methods = ['GET','POST'])
 def stuff():
-    global sleep,active,drowsy,status#="NOT !"
+    global sleep,active,drowsy,status              #="NOT !"
     print("ENTER INDISE FLASK")
     # print(status)
     if request.method == 'POST':
