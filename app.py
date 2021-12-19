@@ -88,7 +88,7 @@ def stuff():
         # print(type(g[0]))
         arr=np.array(g)
         # print(arr.shape)
-        arr=arr.reshape((400,400,4))
+        arr=arr.reshape((10,10,4))
         # print(arr.shape)
         # arr2=arr[1:,:,:]
         arr=arr[:,:,:]
@@ -167,7 +167,7 @@ def stuff():
         # os.remove("new.png")
         result=status
         return result
-    return None
+    return "FLASK"
 
 
 @app.route('/')
