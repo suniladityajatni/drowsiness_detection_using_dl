@@ -165,7 +165,7 @@ def stuff():
         # ret,buffer=cv2.imencode('.jpg',frame)
         # frame=buffer.tobytes()
         # os.remove("new.png")
-        result=status
+        result="status"
         return result
     return "FLASK"
 
