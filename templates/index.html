@@ -46,7 +46,7 @@
     &emsp;
     &emsp;
     &emsp;
-    <canvas id="canvas" width="400" height="400" name="canvas"></canvas>
+    <canvas id="canvas" width="10" height="10" name="canvas"></canvas>
     
     <h1 id="txt">?</h1>
   <!-- </form> -->
@@ -84,10 +84,10 @@ if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia)
                     };
 // document.getElementById("snap").addEventListener("click",
 function takesnapshot(){
-  var f=context.drawImage(video,0,0,400,400);
+  var f=context.drawImage(video,0,0,10,10);
   console.log(f);
   console.log(typeof(f));
-  var img=document.getElementById("canvas").getContext("2d").getImageData(0,0,400,400);
+  var img=document.getElementById("canvas").getContext("2d").getImageData(0,0,10,10);
   console.log(typeof(img));
   console.log(img.data);
   console.log(img);
