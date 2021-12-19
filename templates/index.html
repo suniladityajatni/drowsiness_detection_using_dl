@@ -109,6 +109,9 @@ function takesnapshot(){
                 $('#txt').text(' Status:  ' + data);
                 console.log('Success!');
             },
+	  error: function(XMLHttpRequest, textStatus, errorThrown) {
+        console.log("failed");
+    },
         });
         console.log("EXIT")
   var status=document.getElementById("txt").innerHTML;
