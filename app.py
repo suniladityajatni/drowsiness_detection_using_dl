@@ -167,7 +167,7 @@ def stuff():
         # os.remove("new.png")
         result=status
         return result
-    return None
+    return "NOT"
 
 
 @app.route('/')
