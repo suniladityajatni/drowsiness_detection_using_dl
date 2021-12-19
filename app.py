@@ -179,7 +179,8 @@ def index():
     return render_template('index.html')
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
+if 1:
     sleep=0
     active=0
     drowsy=0
