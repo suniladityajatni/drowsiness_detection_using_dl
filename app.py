@@ -73,8 +73,8 @@ def blinked(a,b,c,d,e,f):
 t=0
 @app.route('/_stuff', methods = ['GET','POST'])
 def stuff():
-    global sleep,active,drowsy,status              #="NOT !"
-    print("ENTER INDISE FLASK")
+    global sleep,active,drowsy,status#="NOT !"
+    # print("ENTER")
     # print(status)
     if request.method == 'POST':
         # Get the file from post request
@@ -88,7 +88,7 @@ def stuff():
         # print(type(g[0]))
         arr=np.array(g)
         # print(arr.shape)
-        arr=arr.reshape((10,10,4))
+        arr=arr.reshape((400,400,4))
         # print(arr.shape)
         # arr2=arr[1:,:,:]
         arr=arr[:,:,:]
@@ -167,7 +167,7 @@ def stuff():
         # os.remove("new.png")
         result=status
         return result
-    return "NOT"
+    return None
 
 
 @app.route('/')
@@ -182,4 +182,4 @@ if __name__ == '__main__':
     drowsy=0
     # if(drowsy>6):
     status="NO FACE DETECTED,PLEASE COME IN FRONT OF LIGHT!"
-    app.run(debug=True,port=8000)
+    app.run(debug=True)
