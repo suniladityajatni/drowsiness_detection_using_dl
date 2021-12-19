@@ -77,6 +77,7 @@ def stuff():
     global active
     global drowsy
     global status
+    active=sleep=drowsy=0
     status="NO FACE DETECTED,PLEASE COME IN FRONT OF LIGHT!"
     # print("ENTER")
     # print(status)
