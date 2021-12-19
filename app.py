@@ -77,6 +77,7 @@ def stuff():
     global active
     global drowsy
     global status
+    status="NO FACE DETECTED,PLEASE COME IN FRONT OF LIGHT!"
     # print("ENTER")
     # print(status)
     if request.method == 'POST':
@@ -179,8 +180,8 @@ def index():
     return render_template('index.html')
 
 
-# if __name__ == '__main__':
-if 1:
+if __name__ == '__main__':
+# if 1:
     sleep=0
     active=0
     drowsy=0
